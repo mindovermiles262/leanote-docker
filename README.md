@@ -11,6 +11,7 @@ docker-compose up -d
 After about a minute log on to http://localhost:8080 to view your blog, or http://localhost:8080/note to get started
 
 Username: admin
+
 Password: abc123
 
 ## About
