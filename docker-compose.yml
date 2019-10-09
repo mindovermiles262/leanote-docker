@@ -1,0 +1,13 @@
+version: '3'
+services:
+  leanote:
+    image: mindovermiles262/leanote:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - leanote_db
+    
+  leanote_db:
+    image: mongo:TAG
+    
+
