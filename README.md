@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-1. Inside `app.conf`, change the secret and any other fields you may want to change. Then run:
+1. Inside `conf/app.conf`, change the secret and any other fields you may want to change. Then run:
 
 ```
 docker-compose up -d
