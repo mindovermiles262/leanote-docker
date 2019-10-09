@@ -1,13 +1,25 @@
 version: '3'
 services:
-  leanote:
-    image: mindovermiles262/leanote:latest
+  web:
+    image: mindovermiles262/leanote:1.0
     ports:
       - "8080:8080"
     depends_on:
-      - leanote_db
+      - db
     
-  leanote_db:
-    image: mongo:TAG
-    
+  db:
+    image: mongo
+    volumes:
+      - ./seed:/seed
+    ports:
+      - "27017:27017"
 
+  seed:
+    build: ./seed
+    environment:
+      - MONGO_HOST=db
+      - MONGO_PORT=27017
+    volumes:
+      - ./seed:/seed
+    command:
+      "mongorestore -h db --dir /seed/"

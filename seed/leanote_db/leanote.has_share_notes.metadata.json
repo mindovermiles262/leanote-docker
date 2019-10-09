@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"leanote_install_data.leanote.has_share_notes"},{"v":{"$numberInt":"2"},"unique":true,"key":{"UserId":{"$numberInt":"1"},"ToUserId":{"$numberInt":"1"}},"name":"UserId_1_ToUserId_1","ns":"leanote_install_data.leanote.has_share_notes"}],"uuid":"836e0a9fdbd444c28aae4bfefad89ea5"}

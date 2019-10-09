@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"leanote_install_data.find_pwds"}],"uuid":"94181a1663a049d1b962336ebeebc7e6"}

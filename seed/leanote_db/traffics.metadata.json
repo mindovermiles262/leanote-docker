@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"leanote_install_data.traffics"},{"v":{"$numberInt":"2"},"key":{"UserId":{"$numberInt":"1"}},"name":"UserId_1","ns":"leanote_install_data.traffics","background":true}],"uuid":"97fe3b6dcc5d48e1bc7e922748d7ccf1"}

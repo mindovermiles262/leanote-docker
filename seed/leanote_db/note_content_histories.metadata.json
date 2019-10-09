@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"leanote_install_data.note_content_histories"}],"uuid":"3dff5092438a49819bf8af8bc3cb3d8d"}
