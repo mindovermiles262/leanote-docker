@@ -24,5 +24,5 @@ Password: abc123
 
 ## How it works
 
-This repo contains all the scripts necessary for building and deploying Leanote inside of docker containers. The leanote source code is downloaded from github and installed inside a container. A minimal (empty) database is seeded by following the instructions above.
+This repo contains all the scripts necessary for building and deploying Leanote inside of docker containers. The leanote source code is downloaded from github and installed inside a container. A minimal (empty) database is seeded by following the instructions above. This DB contains only one user and disables the demo account.
 
