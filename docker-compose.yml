@@ -1,9 +1,12 @@
 version: '3'
 services:
   web:
-    image: mindovermiles262/leanote:1.0
+    image: mindovermiles262/leanote:latest
+    environment:
+      - APP_SECRET=${APP_SECRET}
+      - SITE_URL=${SITE_URL}
     ports:
-      - "8080:8080"
+      - "${LEANOTE_PORT:-8080}:8080"
     depends_on:
       - db
     
@@ -11,15 +14,3 @@ services:
     image: mongo
     volumes:
       - ./seed:/seed
-    ports:
-      - "27017:27017"
-
-  seed:
-    build: ./seed
-    environment:
-      - MONGO_HOST=db
-      - MONGO_PORT=27017
-    volumes:
-      - ./seed:/seed
-    command:
-      "mongorestore -h db --dir /seed/"

@@ -18,3 +18,4 @@ files
 /node_modules
 .idea
 *.iml
+.env
