@@ -2,6 +2,7 @@ version: '3'
 services:
   web:
     image: mindovermiles262/leanote:latest
+    restart: unless-stopped
     environment:
       - APP_SECRET=${APP_SECRET}
       - SITE_URL=${SITE_URL}
@@ -12,5 +13,6 @@ services:
     
   db:
     image: mongo
+    restart: unless-stopped
     volumes:
       - ./seed:/seed
